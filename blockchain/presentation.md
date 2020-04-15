@@ -4,7 +4,7 @@ layout: true
 author: Dario Castañé
 email: dcastane@loyal.guru
 organization: Loyal Guru
-ˆevent: Guru Talks
+event: Guru Talks
 
 .bottom-bar[
   {{title}} | {{author}} @ {{event}} | {{organization}}
