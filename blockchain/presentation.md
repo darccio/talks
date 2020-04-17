@@ -1,11 +1,13 @@
-title: Taller de Blockchain
+title: Blockchain para todo el mundo
 class: animation-fade
 layout: true
 author: Dario Castañé
-email: d@rio.hn
+email: dcastane@loyal.guru
+organization: Loyal Guru
+event: Guru Talks
 
 .bottom-bar[
-  {{title}} | {{author}}: {{email}} | Blockchain Catalunya
+  {{title}} | {{author}} @ {{event}} | {{organization}}
 ]
 
 ---
@@ -13,74 +15,105 @@ email: d@rio.hn
 class: impact
 
 # {{title}}
-## {{author}}
+## {{author}} @ {{event}}
 
 ---
 
 # Dario Castañé
 
-- Enginyer informàtic: Loyal Guru
-- Divulgador
-- Blockchain Catalunya
-
----
-
 .center[<img src="2013-tweet.png" width="100%">]
 
 ---
 
-# Què és blockchain?
+- Backend Go developer: Loyal Guru
+- Divulgador: [speakerdeck.com/dario](https://speakerdeck.com/dario)
+- Blockchain Catalunya
 
-1. Base de dades (la més lenta del món)
-2. Registre distribuït
-3. Cadena de blocs
+---
+
+# ¿Qué es blockchain?
+
+1. Base de datos (la más lenta del mundo*)
+2. Registro distribuido
+3. Cadena de bloques
+
+_*: tiene una explicación._
+
+---
+
+## ¿Por qué es lenta?
+
+Cambiamos velocidad por:
+
+- descentralización
+- immutabilidad
+- auditoría
+- no es necesario confiar en terceros
 
 ???
 
-Característiques:
-
-- descentralitzada
-- inmutable
-- auditable
-- sense necessitat de confiar en tercers
+- Pensad en Napster, eMule, Bittorrent, etc.
 
 ---
 
-# Com funciona?
+# Antes de ir al meollo, ¿para qué sirve?
 
-- Els blocs estan formats per:
-  - Dades
-  - Empremta de l'anterior bloc
-  - Empremta generada
-- Proof of X (on X pot ser Work, Stake, Burning, etc)
-- Consens emergent
-- Molta criptografia
-
----
-
-.center[<img src="blockchain-simply-explained.png" width="100%">]
+- Pagos y transferencias
+- Rastreo de mercancías
+- Sistemas de recompensas
+- Identidad digital
+- Voto digital
+- Certificación
+- Tokenizar bienes y recursos
+- ...
 
 ---
 
-## Criptografia de clau assimètrica
+# ¿Cómo funciona?
 
-.center[<img src="xifrat.png" width="65%">]
+- Elementos claves:
+  - Huella o hash
+  - Prueba of X (trabajo, participación, quemado, etc)
+  - Criptografía asimétrica: transacciones
 
 ---
 
-## Funcions de hash o empremta
+## Funciones de huella o hash
 
 .center[<img src="hash.png" width="100%">]
 
 ---
 
-# Quines blockchains hi ha?
+## Prueba de X
 
-- Públiques: Bitcoin, Ethereum, etc.
-- Privades
-- "Permissionada"
+.center[<img src="PoW_vs_PoS.jpg" width="75%">]
+
+???
+
+- Stake o participación
+- Lo usará Ethereum a medio plazo.
 
 ---
+
+.center[<img src="blockchain-simply-explained.png" width="100%">]
+
+???
+
+- Bloques formados por:
+  - Datos
+  - Huella del bloque anterior
+  - Huella de los datos más la huella del anterior
+- Consenso emergente vía "proof of X"
+
+---
+
+## Criptografia de clave asimétrica
+
+.center[<img src="xifrat.png" width="65%">]
+
+---
+
+# It's full of st... projects!
 
 .center[<img src="blockchain-ecosystem.png" width="70%">]
 
@@ -90,34 +123,33 @@ Característiques:
 
 ---
 
-# I tot això, com ho fem fer servir?
-
-- Wallet:
-  - Transferències
-  - Identitat
-  - Tokens
-
-???
-
-- Notaries
-- Titularitat i seguiment de bens
-- Apostes
-- Adquisició de recursos de computació
-- ...
+.center[<img src="20200227-coinmarketcap.png" width="90%">]
 
 ---
 
-# Annex: Blockchain Catalunya
-
-???
-
-- 50€/any
+.center[<img src="meetup.png" width="80%">]
 
 ---
 
-# APM? Gràcies!
+.center[<img src="blockchain_cat.png" width="100%">]
 
-- d@rio.hn
+---
+
+.center[<img src="spirit.png">]
+
+---
+
+# Recursos adicionales
+
+- Binance Academy: [binance.vision/es](https://www.binance.vision/es/)
+- Coinbase Learn: [coinbase.com/learn](https://www.coinbase.com/learn)
+
+---
+
+# ¿APM? ¡Gracias!
+
+- {{email}}
+- speakerdeck.com/dario
 - twitter.com/@im_dario
 - @dario@mastodon.social
 - github.com/imdario
