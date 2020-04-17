@@ -1,0 +1,28 @@
+{
+  "name": "talks",
+  "version": "20.04",
+  "description": "Dario Castañé's talks",
+  "dependencies": {},
+  "devDependencies": {
+    "backslide": "^2.6.0",
+    "decktape": "^2.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdario/talks.git"
+  },
+  "keywords": [
+    "talks",
+    "slides",
+    "bitcoin",
+    "blockchain",
+    "cloud",
+    "iot"
+  ],
+  "author": "Dario Castañé <d@rio.hn>",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/imdario/talks/issues"
+  },
+  "homepage": "https://github.com/imdario/talks#readme"
+}
