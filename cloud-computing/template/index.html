@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  {{{style}}}
+  <script src="remark.min.js"></script>  
+  <script>
+    function create() {
+      remark.macros.img = function (altText, width) {
+        var url = this;
+        const img = document.createElement("img");
+        img.setAttribute('alt', altText);
+        img.setAttribute('src', url);
+        img.style.width = width;
+
+        return img.outerHTML;
+      };
+      return remark.create({
+        {{{source}}},
+        ratio: '16:9',
+        highlightLines: true,
+        countIncrementalSlides: false,
+        highlightStyle: 'github'
+      });
+    }
+  </script>
+</head>
+<body onload="slideshow = create()">
+</body>
+</html>
