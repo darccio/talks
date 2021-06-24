@@ -2,10 +2,9 @@
   "name": "talks",
   "version": "20.04",
   "description": "Dario Castañé's talks",
-  "dependencies": {},
   "devDependencies": {
-    "backslide": "^2.6.0",
-    "decktape": "^2.11.0"
+    "backslide": "^3.0.0",
+    "decktape": "^3.1.0"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,9 @@
     "iot",
     "go",
     "golang",
-    "linter"
+    "linter",
+    "ruby",
+    "sidekiq"
   ],
   "author": "Dario Castañé <d@rio.hn>",
   "license": "CC-BY-NC-SA-4.0",
