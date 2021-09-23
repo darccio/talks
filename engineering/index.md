@@ -1,0 +1,9 @@
+- Management
+- Lideratge
+- Situational awareness
+    - Your observations
+    - Your manager's observations
+    - Your team's observations
+- Avoid context switch
+- https://t.me/programmerhumor/3082
+- 1:1

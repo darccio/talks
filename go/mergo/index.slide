@@ -1,0 +1,70 @@
+# Oops - I broke Docker
+A story about maintaining github.com/imdario/mergo
+24 Sep 2021
+Tags: open source, go, mergo
+Summary: Releasing code in the open is an act of kindness. You help to scratch the same itch you had. But you don't know who will use this code. Mine ended in the heart of the cloud: containers. Mergo is a small library used to merge structs used by Docker, Kubernetes, and other big projects. And, because of one teeny tiny mistake, I broke a released version of Docker. This talk is the story of what happened and what lessons I learned.
+
+Dario Castañé
+Engineering Manager, Loyal Guru
+d@rio.hn
+https://da.rio.hn/
+@darccio
+
+## Mergo?
+
+Merging Go structs and maps since 2013
+
+.link https://github.com/imdario/mergo
+
+Since then:
+
+* 1.700 stars,
+* 200 forks,
+* 2.500 unique daily clones,
+* and 7.250 repositories using it, including
+  * Kubernetes,
+  * Docker,
+  * Grafana,
+  * and more.
+
+: I was learning Go developing a side project.
+: I needed a better way to handle default values in structs.
+
+## The origin: Zas
+
+(quick plug) Most simple static website generator in Golang.
+
+.link https://github.com/imdario/zas
+
+## The (second) origin: Golang stdlib
+
+.code origin.go
+
+## The expansion: Kubernetes & Docker
+
+* Mar 2013: Mergo is alive!
+* Jan 2015: [kubernetes/kubernetes] add kubeconfig types [#2861](https://github.com/kubernetes/kubernetes/pull/2861)
+* Jan 2016: [moby/moby] Allow to set daemon and server configurations in a file. [#18587](https://github.com/moby/moby/pull/18587)
+* Sep 2021: 7.250 repositories
+
+## This is fine
+
+.image https://imgs.xkcd.com/comics/dependency.png
+
+## Not everything in the garden is rosy
+
+- Broken Docker: [#1981](https://github.com/docker/cli/issues/1981)
+- Broken Kubernetes: [#24319](https://github.com/kubernetes/kubernetes/issues/24319)
+
+## Lessons
+
+* Scratch your itch, share it with the world
+* Unus pro omnibus, omnes pro uno
+* Don't accept PRs easily: tests are not enough
+
+## What the future holds
+
+* Help needed
+* Ideas:
+  * Clean room rewrite: Mergo in the wild project
+  * Generate code
