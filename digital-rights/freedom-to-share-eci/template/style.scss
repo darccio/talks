@@ -39,8 +39,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 h1 { color: $primary; }
-h2 { color: $secondary; }
-h3 { color: $tertiary; }
+h2 { color: $secondary; font-family: $font; }
+h3 { color: $secondary; }
 li { margin-bottom: .25em; };
 pre, code {
   text-align: left;

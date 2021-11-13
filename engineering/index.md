@@ -7,3 +7,30 @@
 - Avoid context switch
 - https://t.me/programmerhumor/3082
 - 1:1
+
+- Make a plan with milestones. Be S.M.A.R.T (Specific, Measurable, Attainable, Realistic and Time-bound).
+- Commit to the plan. Put it in your calendar. Speak to your manager if you need to.
+- Celebrate your milestones. Reward yourself to keep the momentum going.
+- https://linearb.io/blog/promoted-from-dev-to-team-lead-8-things-they-didnt-tell-me/
+- https://leadership.garden/articles/the-5-common-mistakes-of-new-engineering-managers/
+- https://fernandoamaral.org/delegating/
+- https://newsletter.timber.fm/p/how-to-survive-a-toxic-workplace
+- https://leaddev.com/culture-engagement-motivation/strategies-creating-environment-continuous-learning?utm_source=twitter&utm_medium=social&utm_content=continuous-learning&utm_campaign=ss016
+- https://leaddev.com/productivity-eng-velocity/optimizing-micro-feedback-loops-engineering
+- https://leaddev.com/mentoring-coaching-feedback/engineering-management-101-evaluating-your-teams-performance?utm_campaign=EMN+%23072&utm_medium=email&utm_source=autopilot
+- https://bellmar.medium.com/all-the-best-engineering-advice-i-stole-from-non-technical-people-eb7f90ca2f5f
+- https://codingsans.com/blog/self-managed-teams
+- https://leaddev.com/culture-engagement-motivation/shaping-engineering-leadership-through-letting-go?utm_content=buffer99fac&utm_medium=social&utm_source=twitter&utm_campaign=content
+- https://www.kateleto.com/articles/organizational-awareness-the-leaders-sixth-sens?utm_campaign=EMN+%23074&utm_medium=email&utm_source=autopilot
+- https://developer.squareup.com/blog/becoming-an-organizational-leader/?utm_campaign=Level%20Up&utm_medium=email&utm_source=Revue%20newsletter
+- https://daily.dev/blog/five-leadership-lessons-i-learned-from-microsoft-netflix-stack-overflow-gitlab-equinix?utm_campaign=DevInterrupted%20Newsletter&utm_medium=email&_hsmi=164717755&utm_content=164684771&utm_source=hs_email
+- https://newsletter.pragmaticengineer.com/p/project-management-in-tech
+- https://parkjoon.medium.com/what-does-my-engineering-manager-do-all-day-ebdc37c45d8
+- https://www.patkua.com/blog/rewiring-dry/
+- https://codecapsule.com/2021/09/09/how-to-get-your-silent-1-on-1s-back-on-track/?utm_campaign=Level%20Up&utm_medium=email&utm_source=Revue%20newsletter
+- https://tecnofor.es/elimina-la-prioridad-y-la-priorizacion/
+- https://tomgamon.com/posts/things-i-have-learned-new-tech-lead/
+- https://iism.org/article/is-management-pressuring-you-to-deliver-unfinished-code-59
+- https://www.educative.io/courses/become-an-effective-engineering-manager/N8ELXQAXM8K
+- Matriu d'Eisenhower
+- Establir one-on-one periòdic durant la primera setmana de l'sprint

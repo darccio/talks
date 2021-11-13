@@ -21,10 +21,11 @@ h1 {
   color: #ef4347; }
 
 h2 {
-  color: #4c75ba; }
+  color: #4c75ba;
+  font-family: "Open Sans", Helvetica, sans-serif; }
 
 h3 {
-  color: #3cb551; }
+  color: #4c75ba; }
 
 li {
   margin-bottom: .25em; }

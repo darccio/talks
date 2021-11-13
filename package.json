@@ -1,6 +1,6 @@
 {
   "name": "talks",
-  "version": "20.04",
+  "version": "21.10",
   "description": "Dario Castañé's talks",
   "devDependencies": {
     "backslide": "^3.0.0",
