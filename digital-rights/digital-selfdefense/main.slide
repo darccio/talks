@@ -5,38 +5,167 @@ Dario Castañé
 d@rio.hn
 https://dario.cat
 
-: Ex ordio
-: Següent diapositiva: algunes preguntes abans
+: Presentació
+: Ex ordio: La nostra seguretat està sota setge
+: En aquesta xerrada us parlaré d'autodefensa digital, en tres seccions:
+:  - Context
+:  - Filosofia
+:  - Consells i eines
+: Deixar clar que no hi ha recepta màgica
 
-## 
+## Context (1/2): Qui ens ataca?
 
-Prova
+Uns...
 
-: Més notes
+- Barrets negres
+- Estafadors
 
-- Les teves dades són recollides i explotades: perfils
-- La teva navegació pot ser observada
-- Protegir-nos és una responsabilitat compartida
-- Desinformació: publicitat a xarxes socials
-- Impacte climàtic: una gran indústria contaminant
+i altres:
 
-: Clearview
+- Grups d'interès o pressió
+- Empreses
+- Governs
+
+: Ni hackers ni pirates
+: Tots tenen interesos diferents
+: 1r grup:
+:  - Robatori d'identitat
+:  - Robatori de dades
+:  - Extorsió
+:
+: 2n grup:
+:  - Venda de dades
+:  - Falses notícies
+:  - Espionatge
+:
+: Casos:
+:  - Salut
+:  - CatalanGate
+:  - Xarxes de propagació de notícies falses d'extrema dreta
+
+## Context (2/2): Com ens assetgen?
+
+A tu:
+
+- Serveis gratuïts extractivistes
+- Rastreig
+- Enginyeria social: pesca digital
+- Continguts pescaclics
+- Vulnerabilitats dels teus dispositius
+
+I a tercers:
+
+- Enginyeria social dirigida a treballadors
+- Vulnerabilitats de la seva infraestructura
+
+: Les teves dades són recollides i explotades (perfilat): Clearview i Facebook (fins i tot nens)
 : Components de xarxes socials i analítiques ocultes a simple vista
+: Les vulnerabilitats poden ser conegudes (sistemes antics) o de dia zero
+: Pegasus, Candiru, etc. són atacs molt dirigits i a l'abast de pocs
+: Desinformació: publicitat a xarxes socials
+: Impacte climàtic: una gran indústria contaminant
 : Contaminació: gairebé 100 megatones de CO2 per any
 : Environmental impact assessment of online advertising (https://doi.org/10.1016/j.eiar.2018.08.004)
+: Proveïdors: poden observar la teva navegació (i també tercers)
 
-## Accions
+## Filosofia (1/2)
 
-- Reduir les aplicacions instal·lades
-- Exercir drets sobre les nostres dades (GDPR)
-- Exigir responsabilitats a qui guardi dades nostres
-- Evitar els serveis gratuïts
-- Bossa faraday per bloquejar la comunicació del mòbil
-- Bloquejar galetes
-- Desactivar els serveis d'ubicació
-- Demanar permís per publicar fotografies a xarxes
-- Evitar iniciar sessió amb xarxes socials
-- Mantenir dispositius el màxim temps possible i preferir dispositius reacondicionats
-- Fer ús responsable del núvol
-- No fer multitasca
-- Participar en discussions de manera constructiva, compartir informació acurada i donant suport a iniciatives
+- Tu ets la baula feble
+- No hi ha recepta màgica
+- Res és infalible
+
+: Però sí principis útils
+
+## Filosofia (2/2): principis d'autodefensa digital
+
+- **Pensament adversarial:** conèixer qui pot assetjar-nos i actuar en conseqüència
+- **La seguretat com procés constant:** incoporar eines gradualment i mantenir-se al dia
+- **Minimalisme digital:** la informació més segura és la que no es genera ni s'emmagatzema a llarg termini
+- **Res és de franc:** si ho és, les nostres dades i vides són el producte
+- **Contrastar abans d'actuar:** no confiar en el remitent, en cas de dubtar comprovar
+
+: És insostenible mantenir un alt perfil de seguretat i portar una vida digital activa
+: Deixem un gran rastre de dades arreu
+: Perserverar sense esgotar-se
+: Mantenir-se al dia
+: Ser conscients dels límits
+: Fer que els nostres cercles també incorporin la seguretat en el seu dia a dia
+
+## Consells i eines (1/6): preservatius
+
+- Físics:
+  - Càmeres
+  - Micròfons
+  - Dispositius "smart"
+  - Empremtes digitals
+
+- Intangibles i digitals:
+  - Comunicacions: VPN, Tor, GPG, ...
+  - Programes i sistemes operatius
+  - Còpies de seguretat xifrades
+  - Relacions personals
+
+: Evitar, en la mesura del possible, empremtes digitals
+: Vigileu amb el maquina barat com marques xinesas o els dispositius smarts
+: Si feu servir xarxes socials, eviteu escampar la vostra relació amb tercers
+: No publiqueu fotos sense permís
+: Bossa faraday per bloquejar la comunicació del mòbil
+
+## Consells i eines (2/6): controlar els teus dispositius
+
+- Reduir les aplicacions instal·lades (i comptes)
+- Configurar totes les opcions possibles per reduir les dades compartides: ubicació, telemetria
+- Preferir sistemes operatius lliures*
+- Mantenir-los actualitzats
+
+: Principalment enfocat a dispositius mòbils però aplicable a ordinadors
+: Mantenir dispositius el màxim temps possible i preferir dispositius reacondicionats
+
+## Consells i eines (3/6): navegar amb més seguretat
+
+- Preferir navegadors lliures independents: Firefox, Brave, LibreWolf, TorBrowser
+- Instal·lar complements per bloquejar rastrejadors i galetes:
+  - Decentraleyes
+  - HTTPS Everywhere
+  - Privacy Badger
+  - Random Agent Spoofer
+  - uBlock Origin
+  - 1password*
+- Netejar galetes periòdicament
+- Evitar iniciar sessió amb comptes de xarxes socials
+
+## Consells i eines (4/6): comunicar-se amb més seguretat
+
+- Missatgeria: Signal, Telegram*
+- Correu electrònic:
+  - Fastmail, Posteo, Protonmail
+  - Xifrat: GnuPG, Mailvelope
+- Xarxes socials: evitar-les (o anar al Fedivers)
+
+## Consells i eines (5/6): com identificar bons serveis
+
+- Si és gratuit i ofert per una empresa amb ànim de lucre, el producte ets tu
+- Escull privacitat
+- Escull obert/lliure
+- Escull criptografia
+- Escull descentralització
+- Exigeix els teus drets (GDPR)
+- Vota amb el teu diner
+- Fer-ne un ús responsable
+
+## Consells i eines (6/6): no tot s'arregla amb tecnologia
+
+- Participar en discussions de manera constructiva
+- Compartir informació acurada
+- Donar suport a iniciatives
+- Formar-se:
+  - Resistencia Digital, de Críptica (ed. Descontrol)
+  - El Enemigo Conoce el Sistema, de Marta Peirano (ed. Destino)
+  - Psychopass
+  - Black Mirror
+
+## Resum
+
+- La seguretat com pràctica diaria i filosofia
+- La seguretat com protecció personal i col·lectiva
+- La baula més feble som nosaltres mateixos
