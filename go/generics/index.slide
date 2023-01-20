@@ -1,0 +1,64 @@
+Genéricos
+¿A dónde vamos desde aquí?
+
+Dario Castañé
+Engineering Manager, Loyal Guru
+20 Jan 2023
+
+* ¿Qué son?
+
+Una implementación de polimorfismo paramétrico
+
+.image classy_gopher.png
+
+* Ahora sí, ¿qué son?
+
+Definir funciones y tipos con parámetros de tipos de variables.
+
+* ¿Por qué?
+
+- Deduplicar código
+- Eliminar `interface{}` de tus estructuras de datos
+- Evitar que los valores de parámetros `interface{}` "escapen" al heap
+
+* ¿Cómo?
+
+.code before.go
+
+* ¿Cómo?
+
+.code after.go
+
+* ¿Cómo?
+
+.code constraint.go
+
+: Se pueden añadir funciones también.
+
+* ¿Qué más?
+
+.link https://go.dev/play/p/VuCwENKUsGn
+
+: https://www.scylladb.com/2022/04/27/shaving-40-off-googles-b-tree-implementation-with-go-generics/
+: https://go.dev/blog/when-generics
+: https://medium.com/@enverbisevac/you-dont-need-orm-in-go-9216fb74cdfd
+: https://www.dolthub.com/blog/2022-04-01-fast-generics/
+: https://planetscale.com/blog/generics-can-make-your-go-code-slower
+: https://rakyll.org/generics-facilititators/
+
+* Conclusión
+
+- Los genéricos son una herramienta poderosa
+- No hay que abusar de ellos: escribe código, no diseñes tipos
+
+* ¡Gracias!
+
+Dario Castañé
+
+Engineering Manager, Loyal Guru
+
+d@rio.hn
+
+dario.cat
+
+@dario@mastodont.cat
