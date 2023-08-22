@@ -1,4 +1,4 @@
-module github.com/imdario/talks/go/generics
+module github.com/darccio/talks/go/generics
 
 go 1.19
 

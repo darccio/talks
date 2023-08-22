@@ -29,7 +29,7 @@ class: impact
 
 - Engineering Manager
 - Divulgador: [speakerdeck.com/dario](https://speakerdeck.com/dario)
-- FOSS: [github.com/imdario/mergo](https://github.com/imdario/mergo)
+- FOSS: [github.com/darccio/mergo](https://github.com/darccio/mergo)
 
 ---
 
@@ -98,4 +98,4 @@ class: impact
 - speakerdeck.com/dario
 - twitter.com/@darccio
 - @dario@mastodon.social
-- github.com/imdario
+- github.com/darccio

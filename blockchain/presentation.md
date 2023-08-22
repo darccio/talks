@@ -150,7 +150,7 @@ Cambiamos velocidad por:
 
 - {{email}}
 - speakerdeck.com/dario
-- twitter.com/@im_dario
+- twitter.com/darccio
 - @dario@mastodon.social
-- github.com/imdario
+- github.com/darccio
 - keybase.io/dario

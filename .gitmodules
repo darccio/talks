@@ -1,6 +1,6 @@
 [submodule "autodefensa-digital"] 
 	path = autodefensa-digital
-	url = https://github.com/imdario/autodefensa-digital
+	url = https://github.com/darccio/autodefensa-digital
 [submodule "tecnologiesdisruptives2019"] 
 	path = tecnologiesdisruptives2019
-	url = https://github.com/imdario/tecnologiesdisruptives2019
+	url = https://github.com/darccio/tecnologiesdisruptives2019

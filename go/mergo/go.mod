@@ -1,4 +1,4 @@
-module github.com/imdario/talks/go/mergo
+module github.com/darccio/talks/go/mergo
 
 go 1.16
 

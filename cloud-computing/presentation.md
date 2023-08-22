@@ -435,9 +435,9 @@ background-image: url(blockchain-ecosystem-2.png)
 
 - {{email}}
 - speakerdeck.com/dario
-- twitter.com/im_dario
+- twitter.com/darccio
 - @dario@mastodon.social
-- github.com/imdario
+- github.com/darccio
 - keybase.io/dario
 
-Slides: [github.com/imdario/talks](https://github.com/imdario/talks)
+Slides: [github.com/darccio/talks](https://github.com/darccio/talks)
