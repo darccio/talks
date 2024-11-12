@@ -18,6 +18,8 @@ I'm Dario Castañé.
 
 I work at DataDog as open source library maintainer for dd-trace-go, our Go SDK for APM, ASM, Profiling and other products.
 
+Ok, quick show of hands. Anyone using Datadog?
+
 In the next minutes, we'll go from a basic chi server without any dd-trace-go code to the exactly chi server without any dd-trace-go code BUT sending traces and profiles to DataDog.
 
 How? We are going to use Orchestrion.
