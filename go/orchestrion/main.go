@@ -18,12 +18,12 @@ func serveHTTP() {
 	r.Get("/ping", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Pong!")
 	})
-	http.ListenAndServe("127.0.0.1:8080", r)
+	http.ListenAndServe("127.0.0.1:9090", r)
 }
 
 func generateRequests() {
 	for {
-		_, err := http.Get("http://127.0.0.1:8080/ping")
+		_, err := http.Get("http://127.0.0.1:9090/ping")
 		if err != nil {
 			slog.Error(err.Error())
 		}
