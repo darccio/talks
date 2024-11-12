@@ -39,6 +39,12 @@ img[alt~="center"] {
 
 [github.com/DataDog/orchestrion](github.com/DataDog/orchestrion)
 
+<!--
+cat go.mod
+orchestrion pin
+cat go.mod
+-->
+
 ---
 
 # Demo time!
@@ -58,4 +64,4 @@ Jon Bodner - GopherCon 2023: [youtu.be/5l-W7vPSbuc](https://youtu.be/5l-W7vPSbuc
 
 Me (again): bsky: dario.cat, fediverse&email: d@rio.hn
 
-These slides: [github.com/darccio/talks/main/go/orchestrion](https://github.com/darccio/talks/main/go/orchestrion)
+These slides: [github.com/darccio/talks/tree/main/go/orchestrion](https://github.com/darccio/talks/tree/main/go/orchestrion)
