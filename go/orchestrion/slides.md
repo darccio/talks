@@ -32,9 +32,9 @@ How? We are going to use Orchestrion.
 [datadoghq.dev/orchestrion](https://datadoghq.dev/orchestrion/)
 
 <!--
-Transparently add Datadog instrumentation to your go applications to achieve maximum coverage for Application Performance Monitoring, Application Security Management and Profiling.
+Orchestrion is a tool that transparently add Datadog instrumentation to your go applications to achieve maximum coverage for Application Performance Monitoring, Application Security Management and Profiling.
 
-It works thanks to a go build flag called toolexec.
+It works thanks to a go build flag called toolexec. That's the key for this to work.
 
 It allows to control or modify how Go's toolchain programs get run.
 
@@ -60,7 +60,8 @@ cat go.mod
 # Demo time!
 
 - <a href="https://app.datadoghq.eu/apm/traces?query=%40_trace_root%3A1%20service%3Agolab2024&agg_m=count&agg_m_source=base&agg_t=count&cols=core_service%2Ccore_resource_name%2Clog_duration%2Clog_http.method%2Clog_http.status_code&fromUser=false&historicalData=false&messageDisplay=inline&query_translation_version=v0&serviceName=golab2024&sort=desc&spanType=trace-root&storage=hot&view=spans&paused=false" target="_blank">Tracing</a>
-- <a href="https://app.datadoghq.eu/profiling/explorer?query=service%3Agolab2024%20host%3ACOMP-WDWT6G66NH&agg_m=count&agg_m_source=base&agg_t=count&fromUser=true&my_code=disabled&refresh_mode=paused&viz=flame_graph&live=true" target="_blank">Profiling</a>
+- <a href="https://app.datadoghq.eu/profiling/explorer?query=service%3Agolab2024%20&agg_m=count&agg_m_source=base&agg_t=count&fromUser=true&my_code=disabled&refresh_mode=paused&viz=flame_graph&live=true" target="_blank">Profiling</a>
+- <a href="https://app.datadoghq.eu/logs/livetail?query=service%3Agolab2024&storage=live" target="_blank">Logging</a> (with the [Agent properly configured](https://docs.datadoghq.com/agent/logs/?tab=tcpudp#activate-log-collection))
 
 <!--
 Show it first empty, run and show it full.

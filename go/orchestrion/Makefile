@@ -9,7 +9,7 @@ setup:
 
 run:
 	orchestrion go build .
-	DD_PROFILING_ENABLED=true DD_TRACE_AGENT_PORT=9126 ./golab2024
+	DD_APPSEC_ENABLED=true DD_PROFILING_ENABLED=true DD_TRACE_AGENT_PORT=9126 ./golab2024 > /tmp/golab2024.log
 
 run-uninstrumented:
 	go run .

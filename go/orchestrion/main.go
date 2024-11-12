@@ -5,19 +5,20 @@ import (
 	"log/slog"
 	"math/rand/v2"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )
 
+var log *slog.Logger
+
 func serveHTTP() {
 	r := chi.NewRouter()
-	r.Use(middleware.Logger)
+	r.Use(logger)
 	r.Use(middleware.Recoverer)
-	r.Get("/ping", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Pong!")
-	})
+	r.Get("/ping", ping)
 	http.ListenAndServe("127.0.0.1:9090", r)
 }
 
@@ -25,7 +26,10 @@ func generateRequests() {
 	for {
 		_, err := http.Get("http://127.0.0.1:9090/ping")
 		if err != nil {
-			slog.Error(err.Error())
+			log.Error("failed to make request", slog.Attr{
+				Key:   "error",
+				Value: slog.StringValue(err.Error()),
+			})
 		}
 		amount := rand.Int() % 300
 		time.Sleep(time.Duration(amount) * time.Millisecond)
@@ -35,4 +39,20 @@ func generateRequests() {
 func main() {
 	go serveHTTP()
 	generateRequests()
+}
+
+func logger(next http.Handler) http.Handler {
+	log = slog.New(
+		slog.NewJSONHandler(os.Stdout, nil),
+	)
+
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		log.Info("request received")
+		next.ServeHTTP(w, r)
+	})
+}
+
+//dd:span span.name:ping
+func ping(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "Pong!")
 }
