@@ -10,6 +10,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 )
 
 var log *slog.Logger
@@ -54,5 +55,8 @@ func logger(next http.Handler) http.Handler {
 
 //dd:span span.name:ping
 func ping(w http.ResponseWriter, r *http.Request) {
+	if span, ok := tracer.SpanFromContext(r.Context()); ok {
+		span.SetTag("my_route", r.URL.Path)
+	}
 	fmt.Fprint(w, "Pong!")
 }
