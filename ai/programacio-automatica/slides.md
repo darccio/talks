@@ -43,13 +43,9 @@ La revolució industrial del programari
 <!--
 [EXORDIO — 1 minut]
 
-Començar directe, sense salutació llarga.
-
-"No us menteixo si us dic que si m'haguessin dit fa un any que en aquest últim mes hauria gastat a la feina 700$ en tokens, no m'ho hauria cregut.
-
-Però així ha estat i puc dir que he multiplicat la meva productivitat per dos. Ara puc fer dues coses alhora... mentre espero que un agent acabi de fer el que li he demanat. Tres si comptem escoltar podcasts mentre treballo.
-
-Un cop he arribat a aquest punt m'he vist obligat a repensar què significa ser enginyer de programari avui."
+- +700$ en tokens de Claude
+- Productivitat x2 (o x3, podcasts)
+- Plantejar-me que vol dir ser enginyer
 -->
 
 ---
@@ -59,11 +55,12 @@ Un cop he arribat a aquest punt m'he vist obligat a repensar què significa ser 
 Enginyer de programari sènior @ Datadog
 
 <!--
-[PRESENTACIÓ — 30 segons]
+[PRESENTACIÓ — 20 segons]
 
-"Em dic Dario Castañé. Treballo a Datadog com a enginyer de programari, concretament en projectes de codi obert. Mantinc dd-trace-go i Orchestrion, dues eines d'instrumentació en Go, i també mantinc mergo, una llibreria Go amb 3.000 estrelles i més de 30.000 repositoris utilitzant-la.
-
-I aquest mes, personalment estic treballant en un projecte en Rust. Sóc gopher de fa vora 15 anys, 8 anys usant-lo a diari professionalment. Ni fava de Rust. N'aprenc preguntant a l'agent mentre desenvolupo una aplicació d'escriptori. Totalment fora del meu element. Però amb agents puc fer el que abans m'hagués requerit tones d'esforç."
+- Datadog
+- Enginyer de programari en llibreries i eines de codi lliure
+- Principalment en Go (15 anys d'usuari, 8 anys professionalment)
+- Avui vull explicar-vos com plantejo el futur professional
 -->
 
 ---
@@ -75,27 +72,43 @@ No una llista d'eines. No un judici moral.
 <!--
 [DISCLAIMERS — 2 minuts]
 
-"Abans de res, dues coses que no faré. Primer: no us diré si la IA és bona o dolenta. Hi ha arguments legítims en contra — el consum energètic, la qüestió dels drets d'autor de les dades d'entrenament, el desplaçament laboral. Són preocupacions reals i no les ignoraré, però avui no és el debat.
+No faré...
 
-Segon: no us donaré una llista de 50 eines amb noms que canviaran d'aquí a tres mesos. El que sí que faré és proposar-vos un marc mental. Perquè les eines canvien cada setmana, però un bon marc per pensar-hi dura molt més."
+Primer:
+- No us diré si la IA generativa és bona o dolenta
+- Hi ha arguments legítims en contra: consum, drets d'autor, impacte en el mercat laboral
+- Preocupacions reals però no el focus de la meva xerrada
 
-Com veurem, la història ens ensenya que la gent que millor ha navegat les transformacions tecnològiques no és la que s'hi ha oposat ni la que l'ha abraçada cegament — és la que ha preguntat: a qui beneficia això, i com podem fer que ens beneficiï col·lectivament?
+Segon:
+- No llista de 50 eines que canviaran aviat
+- Però després al torn de preguntes em podeu preguntar
+
+Sí faré:
+- Proposar un marc mental
+- Inspirat en els resultats de la lluita obrera del sector tèxtil entre els segles XVIII i XX
+
+Fem un breu repàs del que va succeïr...
 -->
-
 
 ---
 
-# 1790 → 1844
+# De 130 fusos a 1.000
 
-Berguedana: 130 fusos, operada a mà.
-Selfactina: 1.000 fusos, un sol operari.
+En menys de 70 anys, la filatura passa
+de manual a completament automàtica.
 
 <!--
 [CONTEXT HISTÒRIC — 2 minuts]
 
-"Posem-nos en context. Ramon Farguell, un fuster de Berga, construeix la berguedana — una adaptació millorada de la spinning jenny anglesa, una màquina de filar, que converteix cotó en fil per teixir. Centenars de tallers catalans l'adopten perquè a mà només pots fer un fus, mentre que aquesta en permetia 130 alhora.
+- Abans de la Revolució Industrial...
+- Finals del S. XVIII
+- Berguedana, màquina de filar (converteix cotó a fil)
+- Tot i ser manual, permet passar d'un fus a 130 fusos
+- 70 anys després, en plena Revolució Industrial...
+- Selfactina, automatització, 1.000 fusos, un sol operari
+- Productivitat puja, salaris s'enfonsen
 
-El 1844 arriba la selfactina. Completament automatitzada, fins a mil fusos, un sol operari. Cinquanta-quatre anys, de 130 fusos manuals a 1.000 d'automatitzats. La productivitat puja. Els salaris s'enfonsen."
+La conseqüència?
 -->
 
 ---
@@ -103,20 +116,21 @@ El 1844 arriba la selfactina. Completament automatitzada, fins a mil fusos, un s
 # 1854: cremen les fàbriques.
 
 Es prohibeixen les selfactines.
-Madrid deroga la prohibició dues setmanes més tard.
-No la publica fins **8 mesos després**.
-Per por.
+Madrid deroga la prohibició dues setmanes després.
+No la publica fins **8 mesos més tard**.
+Per por a la revolta obrera.
+
+Però aquesta no va impedir que la tecnologia s'implantés.
 
 <!--
 [CONTEXT HISTÒRIC — selfactinada, 1 minut]
 
-"El juliol de 1854, els obrers cremen fàbriques que tenen selfactines. La resposta és brutal — tres persones afusellades — però el poder, per calmar la revolta, fa una cosa extraordinària: prohibeix les selfactines.
+- Màquines cremant
+- Selfactines prohibides, però legalitzades en no res
+- La tecnologia no es va aturar
+- Tots vestim roba teixida per màquines
 
-Madrid revoca la prohibició en dues setmanes... però no la publica fins al maig de 1855. Vuit mesos de silenci. Per por de la reacció obrera.
-
-Fixeu-vos: la tecnologia no es va aturar. Tots aquí vestim roba teixida per màquines. Però la revolta va forçar una negociació.
-
-Potser alguns de vosaltres ja teniu al cap un nom: els ludites."
+I si us pregunto per algú que va destacar per aquesta lluita, quin nom us surt?
 -->
 
 ---
@@ -134,15 +148,16 @@ Demanaven:
 <!--
 [LLIÇÓ LUDITA — 2 minuts]
 
-"Quan sentim 'ludites', pensem en gent trencant màquines. Però les reclamacions dels ludites catalans — i d'altres indrets — no anaven sobre les màquines. Anaven sobre tres preguntes:
+- Quan escoltem aquest nom, pensem en gent destruint màquines
+- Però les seves reclamacions no eren sobre aquestes
+- Sinó sobre aquestes tres preguntes
+- Qui se'n beneficiava? Qui en pagava el cost? I on era la seva dignitat?
 
-Qui s'endú el benefici d'aquesta productivitat? Qui paga el cost de la transició? I on queda la dignitat del treballador?
+- Aquests conflictes van obtenir victòries
+- Selfactinada: reconeixement de societats obreres, vaga general, associació o mort
+- Vaga de la Canadenca: jornada de vuit hores
 
-El conflicte de les selfactines va acabar amb el reconeixement oficial de les Societats Obreres, la llavor dels sindicats moderns, amb una vaga general sota el lema "Associació o mort".
-
-I més tard el 1919, la vaga de la Canadenca acaba per portar la regulació de la jornada de vuit hores.
-
-De la berguedana de fusta de 1790 a la jornada de vuit hores de 1919: 129 anys de lluita. I les tres preguntes dels ludites mai es van respondre soles. Es van respondre perquè algú les va fer."
+I que té a veure tot aix`o amb la IA generativa?
 -->
 
 ---
@@ -156,80 +171,81 @@ De la berguedana de fusta de 1790 a la jornada de vuit hores de 1919: 129 anys d
 <!--
 [TRANSICIÓ AL PRESENT — 30 segons]
 
-"Tornem al 2026. Les tres preguntes són exactament les mateixes.
-
-Qui s'endú el benefici de la productivitat dels LLMs? Qui paga el cost de la transició? I on queda la professió d'enginyer?
-
-Anem a veure-ho."
+- 2026: les tres preguntes segueixen en vigor
+- No buscarem la resposta a les tres
+- Però sí que hem de veure com el que va passar al tèxtil català és un mirall del nostre present
+- I que som al mateix punt però no ens hem de desanimar
 -->
 
 ---
 
 # El paral·lelisme
 
-| Tèxtil s. XVIII-XIX | Programari s. XXI |
-|---|---|
-| Berguedana | Autocomplete, Copilot |
-| Selfactina | Agents de codi |
-| Filador manual | Programador "escriptor de codi" |
-| Teixidor | Enginyer de programari |
+Berguedana → Autocompletar, Copilot
+Selfactina → Agents de codi
+
+Filador manual → Programador "escriptor de codi"
+Teixidor → Enginyer de programari
 
 <!--
 [PARAL·LELISME — 2 minuts]
 
-"La berguedana era una eina manual millorada del s. XVIII. Com l'autocomplete o el primer Copilot: t'ajudava, però tu feies la feina. La selfactina - del s. XIX - era completament automàtica. Com els agents de codi actuals: tu dones la instrucció, la màquina executa.
+- Berguedana, eina manual millorada, autocompletar o el primer Copilot: ajuda però tu fas la feina
+- Selfactina, completament automàtica, com els agents de codi: implementen el que els hi demanes
+- El paral·lel es posa interessant...
+- Amb la berguedana, 20 anys d'or dels teixidors
+- Coll d'ampolla fins que es va automatitzar la teixidura
 
-I aquí és on el paral·lel es posa interessant. Quan la berguedana va automatitzar la filatura, els teixidors manuals van viure 20 anys d'or. La seva feina s'havia convertit en el coll d'ampolla — tothom filava ràpid, però algú havia de teixir tot aquell fil. Fins que van automatitzar la teixidura.
-
-Avui, el codi es fila sol. El coll d'ampolla és el disseny de sistemes, la revisió, el judici. Això és teixir. La pregunta és: som al principi dels 20 anys d'or per a teixidors de sistemes?"
+- Avui és el codi el que es fila sol
+- Coll d'ampolla: disseny de sistemes a escola, la revisió, la capacitat de jutjar
+- Som a l'inici de dues dècades daurades per a teixidors de sistemes?
 -->
 
 ---
 
 # El codi es fila sol
 
-Produir codi ha esdevingut gairebé gratuït.
-
-Produir **bon** codi segueix sent car.
+Si el codi és molt més barat de produir,
+**què és el que té valor?**
 
 <!--
 [BON CODI — 1.5 minuts]
 
-"Deixeu-me ser clar: produir codi mai havia estat tan barat. Però produir bon codi — codi que funciona, que és segur, que gestiona els errors, que té tests, que es pot mantenir — això segueix sent car.
+- Produir codi mai ha estat tan barat
+- Què te valor? La capacitat de jutjar
+- Jutjar que el codi generat realment...
+- Soluciona el problema, és segur, és mantenible...
+- I això és el que és encara car.
 
-Un agent et genera un PR de 500 línies en 10 minuts. Però algú ha de revisar aquelles 500 línies. Algú ha de decidir si solucionen el problema correcte. Algú ha d'entendre si aquella correcció de seguretat realment tanca el vector d'atac o simplement ho sembla.
-
-Perquè escriure codi no és enginyeria de programari."
+- PR de 500 línies en minuts, però algú l'ha de revisar
+- Perquè escriure codi no és enginyeria de programari
 -->
 
 ---
 
 # Escriure codi ≠ enginyeria de programari
 
+Vibe coding: programar per intuició, acceptant el resultat.
+Agentic engineering (o automatic programming): dissenyar sistemes i revisar el resultat abans d'integrar-lo.
+
 Els agents escriuen codi.
 No decideixen trade-offs.
 Necessiten guardaraïls estrictes.
 
 <!--
-[DISTINCIÓ CLAU — 1.5 minuts]
+[DISTINCIÓ CLAU — 2 minuts]
 
-"Hi ha una distinció fonamental que hem de tenir clara: escriure codi i fer enginyeria de programari no és la mateixa feina.
+- En aquest nou món tenim...
+- Vibe coding: et deixes portar, genial per a prototips, però no és enginyeria
 
-Escriure codi és filatura. L'enginyeria de programari és teixidura. És decidir compromisos. És entendre el domini del negoci, l'estratègia de producte, el deute tècnic. És la conversa que l'equip va tenir la setmana passada sobre per què vam triar una arquitectura i no una altra.
+- L'enginyeria es troba en el següent nivell, l'agentic engineering
+- Decidir compromisos, dissenyar amb patrons
+- Entendre el domini del negoci, l'estratègia de producte, el deute tècnic...
+- En això els humans encara guanyem perquè tenim agència
 
-El desenvolupament de programari tal com el coneixíem és mort. Però l'enginyeria de programari està més viva que mai. El rol s'ha transformat: d'escriure codi a dissenyar sistemes que escriuen codi."
--->
-
----
-
-# Agents ≠ enginyeria de programari
-
-Vibe coding: programar per intuició.
-Agentic engineering.
-Automatic programming.
-
-<!--
-TODO
+- El desenvolupament de programari tal com el coneixíem és mort
+- L'enginyeria de programari està més viva que mai
+- El rol s'ha transformat: d'escriure codi a dissenyar sistemes des de patrons, amb codi generat automàticament
 -->
 
 ---
