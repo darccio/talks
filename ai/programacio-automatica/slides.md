@@ -65,7 +65,7 @@ Enginyer de programari sènior @ Datadog
 
 ---
 
-# Avui proposaré un marc mental.
+# Avui proposaré un marc mental
 
 No una llista d'eines. No un judici moral.
 
@@ -113,7 +113,7 @@ La conseqüència?
 
 ---
 
-# 1854: cremen les fàbriques.
+# 1854: cremen les fàbriques
 
 Es prohibeixen les selfactines.
 Madrid deroga la prohibició dues setmanes després.
@@ -229,8 +229,9 @@ Vibe coding: programar per intuició, acceptant el resultat.
 Agentic engineering (o automatic programming): dissenyar sistemes i revisar el resultat abans d'integrar-lo.
 
 Els agents escriuen codi.
-No decideixen trade-offs.
+No decideixen compromisos.
 Necessiten guardaraïls estrictes.
+No operen en el buit
 
 <!--
 [DISTINCIÓ CLAU — 2 minuts]
@@ -240,73 +241,86 @@ Necessiten guardaraïls estrictes.
 
 - L'enginyeria es troba en el següent nivell, l'agentic engineering
 - Decidir compromisos, dissenyar amb patrons
-- Entendre el domini del negoci, l'estratègia de producte, el deute tècnic...
+- Entendre el domini del negoci, l'estratègia de producte, el deute tècnic, l'excel·lència operacional...
+- També detectar quan és necessari posar un guardaraïls: linters, formatadors, ...
+- Claude té hooks que executa sempre, Git també
 - En això els humans encara guanyem perquè tenim agència
 
 - El desenvolupament de programari tal com el coneixíem és mort
 - L'enginyeria de programari està més viva que mai
 - El rol s'ha transformat: d'escriure codi a dissenyar sistemes des de patrons, amb codi generat automàticament
+- Però també cal desplegar i garantir que aquests programaris funcionen (SRE com perfil de futur)
 -->
 
 ---
 
-# No es tracta del model.
+# L'enginyeria canvia, les eines també
+
+Però aquestes eines són al núvol.
+Serem captius?
+
+No necessàriament.
+
+<!--
+[TRANSICIÓ - 1 minut]
+
+- I els LLMs són aquí per quedar-se
+- Però en quines condicions?
+- No es pot negar que la IA generativa ara viu al núvol
+- Però s'albiren desenvolupament que permetin una IA generativa local
+- Sostenible en el seu ús (l'entrenament és més difícil)
+- Com és possible?
+-->
+
+---
+
+# Maquinari local i models oberts
+
+NPUs integrades als processadors moderns.
+Clústers locals cada cop més viables.
+Models oberts cada cop més capaços.
+
+Si el model corre a les nostres màquines,
+**el benefici és nostre**.
+
+<!--
+- Apple és capdavantera en inferència local
+- NPUs: Neural Engine
+- RDMA sobre Thunderbolt: Remote Direct Memory Access
+- Ja es poden muntar clústers de Mac Studios, per una quarta part del que pot costar fer l'equivalent amb GPUs i servidors
+- Però hi ha vida més enllà de la poma
+- Tiiny (Kickstarter, models fins 120 milers de milions de paràmetres)
+- Taalas Hardcore model
+- No estem comdemnats a passar per caixa eternament (pagar-ne el cost)
+
+- A banda, hi ha models oberts que poden funcionar en inferència local
+- Models oberts prou potents per la majoria
+- No tothom necessita utilitzar models de frontera
+- Perquè no tot es tracta d'on còrre el model o el model en si
+-->
+
+---
+
+# Però no es tracta del model o on s'executa aquest
 
 Es tracta del **procés**.
 
 <!--
-[LLMs PER QUEDAR-SE — 2 minuts]
+[LLMs PER QUEDAR-SE — 1.5 minuts]
 
-"I els LLMs no marxaran. Però no per la raó que penseu.
-
-No es tracta del model. Es tracta del procés. Un bon model amb mal procés perd contra un model decent amb bon procés. Sempre. Igual que en el desenvolupament tradicional: no tots els programadors són excepcionals, però un equip de programadors competents amb un bon procés pot construir un gran producte.
-
-El resultat el defineix el procés, no el model. El model és una peça del puzle.
-
-I hi ha una cosa més: no tot han de ser LLMs al núvol."
+- Es tracta del procés
+- I el millor ara mateix és començar a definir el procés que ens funcioni
+- Un bon model amb un mal procés perdrà sempre contra un model decent amb bon procés
+- Això és també cert pel desenvolupament tradicional
+- Un equip competent amb bon procés és millor que un equip excepcional caòtic
+- En resum, el resultat el defineix el procés, no el model
+- El model és una peça del puzle.
+- Parlem dels principis que considero que ha de tenir un bon procés d'enginyeria
 -->
 
 ---
 
-# Maquinari local
-
-NPUs.
-Clústers de 4 Mac Studios: 12.000–50.000 €.
-Dispositius d'inferència local.
-
-<!--
-[ALTERNATIVES LOCALS 1/2 — 45 segons]
-
-"Els processadors moderns ja porten NPUs — unitats de processament neuronal integrades. I els clústers locals estan sent cada cop més viables: 4 Mac Studios costen entre 12.000 i 50.000 euros, versus 100.000 o més en servidors GPU equivalents. Sense costos recurrents, sense costos per token."
-
-També hi ha dispositius com Tiiny - actualment en Kickstarter - o les Taalas hardcore model que s'estan posicionant per inferència local.
--->
-
----
-
-# Models oberts
-
-Cada cop més capaços. Cada cop més accessibles.
-
-<!--
-[ALTERNATIVES LOCALS 2/2 — 30 segons]
-
-"Això importa perquè canvia la resposta a la primera pregunta ludita: 'qui s'endú el benefici?' Si el model corre a la teva màquina, el benefici és teu."
--->
-
----
-
-# Com evolucionar
-
-<!--
-[TRANSICIÓ — 10 segons]
-
-"Aleshores, com naveguem tot això? Us proposo quatre principis."
--->
-
----
-
-# 1. Judici sobre velocitat
+# 1. Capacitat de jutjar, no velocitat
 
 La capacitat que val més ja no és escriure ràpid.
 
@@ -315,28 +329,35 @@ La capacitat que val més ja no és escriure ràpid.
 <!--
 [PRINCIPI 1 — 1.5 minuts]
 
-"Primer: judici sobre velocitat. La meva capacitat de lliurar ja no està limitada per la velocitat a la que codifico. Està limitada per la meva habilitat per revisar. I crec que és exactament com ha de ser.
-
-Quan corregeixo un bug, no miro només si els tests passen. Em pregunto: realment resol la causa arrel? Hi ha casos límit que l'agent ha passat per alt? És la correcció correcta, o simplement un pedaç?
-
-L'habilitat més valuosa del 2026 és llegir codi. Molt codi. Codi open source, codi de producció, codi generat per IA. Entendre què fa, què no fa, i què fa malament."
+Primer:
+- Saber jutjar per sobre de la velocitat
+- No més coll d'ampolla en programar
+- Coll d'ampolla en revisar
+- Així ha de ser
+- Exemple personal: corb
+- L'habilitat més valuosa: llegir codi (lliure, producció, generat per IA)
+- Entendre què fa, què no fa, i què fa malament
 -->
 
 ---
 
-# 2. Processos, no eines
+# 2. Bones pràctiques, no eines
 
 Les eines canvien cada trimestre.
-Un bon procés dura anys.
+Les bones pràctiques duren anys.
 
 <!--
 [PRINCIPI 2 — 1.5 minuts]
 
-"Segon: invertiu en processos, no en eines. Les eines canvien cada trimestre. Un bon procés dura anys.
-
-Algunes coses concretes: no deixeu que l'agent escrigui codi fins que hàgiu revisat i aprovat un pla escrit. PRs petits amb descripcions clares — és l'única combinació que passa la revisió a un ritme raonable. Si tres revisors de dos equips troben el mateix tipus d'error, això és un check esperant a ser escrit.
-
-I sobretot: no envieu PRs amb codi que no heu revisat vosaltres. Si obriu un PR de 500 línies generades per un agent i no heu fet la feina d'assegurar-vos que funciona, esteu delegant la feina real als vostres companys."
+Segon:
+- Invertir en bones pràctiques, no eines
+- Les eines canvien constantment ara mateix
+- Idees:
+- No generar codi fins haver revisat i aprovat un pla exhaustiu
+- PRs petites amb descripcions clares: demostrat com la combinació perfecta que passa revisió a un ritme raonable
+- Mai enviar PRs generades sense revisar-ne el codi
+- Crear guardaraïls personalitzats: linters
+- Automatitzar-los en les pipelines de CI i en local
 -->
 
 ---
@@ -344,21 +365,19 @@ I sobretot: no envieu PRs amb codi que no heu revisat vosaltres. Si obriu un PR 
 # 3. Pregunteu-vos a qui beneficia
 
 L'eina **amplifica** o **substitueix**?
-Profunditza el vostre pensament o
-genera output que accepteu tal qual?
-
-Les mateixes tres preguntes. Sempre.
+Profunditza el pensament o
+genera resultats que acceptem tal qual?
 
 <!--
 [PRINCIPI 3 — 1.5 minuts]
 
-"Tercer: cada cop que adopteu una eina, pregunteu-vos a qui beneficia.
-
-Hi ha dues maneres d'aplicar la IA al treball. Una: generar l'output. Escrius un prompt, l'eina produeix un esborrany, tu passes d'autor a editor de producció aliena. Ràpid, eficient. Però no has modelat el treball. L'has acceptat.
-
-L'altra: aprofundir el procés. L'eina et fa preguntes que treuen el que realment penses. Et mostra tres angles que no havies considerat. Desafia l'assumpció més feble. T'ajuda a anar més endins — i el resultat és genuïnament teu.
-
-La mateixa tecnologia, dues aplicacions oposades. La diferència és si l'eina tracta la participació humana com el coll d'ampolla o com el propòsit."
+Tercer:
+- Quan adoptem una eina, preguntar-se a qui beneficia
+- Tant econòmicament com professionalment (sobretot això, ens ajuda a crèixer?)
+- Dues maneres de treballar amb la IA:
+1. Generar el resultat: prompt, resultat, acceptació humana passiva
+2. Aprofundir en el procés: l'eina et fa preguntes, et mostra diferents angles, et desafia les assumpcions
+- La mateixa tecnologia, dues aplicacions oposades: participació humana com coll d'ampolla o propòsit central"
 -->
 
 ---
@@ -372,11 +391,10 @@ La mateixa tecnologia, dues aplicacions oposades. La diferència és si l'eina t
 <!--
 [PRINCIPI 4 — 1 minut]
 
-"I quart: la responsabilitat és vostra i no es delega.
-
-IBM ho va dir el 1979 en una formació interna: 'Un ordinador no pot ser mai responsable.' Mai ha estat més rellevant.
-
-Quan lliuro codi, el meu nom hi és. Quan hi ha una vulnerabilitat a Undici o un bug a Fastify, és la meva responsabilitat. Puc usar IA per anar més ràpid, però no puc externalitzar el meu judici. No puc externalitzar la meva responsabilitat."
+Quart:
+- La responsabilitat és nostra i no es delega
+- IBM, formació interna, 1979: 'Un ordinador no pot ser mai responsable'
+- Quan lliuro codi, el meu nom hi és, la responsabilitat és meva i no es pot externalitzat
 -->
 
 ---
@@ -386,13 +404,11 @@ Quan lliuro codi, el meu nom hi és. Quan hi ha una vulnerabilitat a Undici o un
 <!--
 [RECAPITULACIÓ — 1 minut]
 
-"Tres idees per endur-vos.
-
-Primera: pregunteu-vos sempre qui s'endú el benefici. Exactament com ho feien els ludites. No és una pregunta retrògrada — és la pregunta que va acabar guanyant la jornada de vuit hores.
-
-Segona: el futur és per als teixidors de sistemes. Judici sobre velocitat, processos sobre eines, pensament crític sobre productivitat cega. Llegiu codi, reviseu codi, enteneu codi.
-
-Tercera: no tot ha de córrer al núvol d'algú altre. Les NPUs, els clústers locals, els models oberts estan aquí. Quan el model corre a casa teva, la resposta a 'qui s'endú el benefici?' ets tu."
+Per concloure:
+- Allunyar-nos del hype de les eines i acceptem que aquestes romandran d'una o altra manera (inferència local)
+- Definir processos
+- Capacitat de jutjar abans que velocitat, bones pràciques abans que eines, amplificar abans que acceptar i tenir responsabilitat plena
+- L'enginyeria de programari és més viva que mai, tant per qui dissenya/teixeix sistemes com per qui en garanteix el seu bon funcionament
 -->
 
 ---
@@ -408,13 +424,16 @@ La pregunta és **qui teixeix**.
 <!--
 [COMIAT — 1 minut]
 
-"La revolució industrial tèxtil a Catalunya va ser molt més que un canvi tecnològic. Va ser una fractura. Les màquines van crear riquesa sense precedents, però el cost humà va ser immens. I la resistència obrera va evolucionar: de cremar màquines a organitzar-se, de l'acció directa a la negociació col·lectiva.
-
-Nosaltres estem vivint la revolució industrial del programari. El codi ja es fila sol. La pregunta no és si les màquines filaran per nosaltres — ja ho fan. La pregunta és qui teixeix. I qui s'endú el benefici del que es teixeix.
-
-Us ho van dir fa 200 anys des dels carrers de Barcelona: Associació o mort. Jo ho traduiria per al 2026: Criteri o irrellevància.
-
-Gràcies."
+- La revolució industrial tèxtil a Catalunya va ser molt més que un canvi tecnològic
+- Va ser una fractura
+- Les màquines van crear riquesa sense precedents, però el cost humà va ser immens
+- Ara nosaltres vivim la revolució industrial del programari
+- El codi ja es fila sol
+- Per tant la pregunta és qui s'adaptarà i com
+- I sobretot, qui s'endú el benefici de tot plegat
+- Ens ho deien fa 200 anys des dels carrers de Barcelona: Associació o mort
+- Jo ho traduiria per al 2026: Criteri o irrellevància
+- Gràcies
 -->
 
 ---
@@ -431,5 +450,5 @@ dario.cat
 </p>
 
 <!--
-Diapositiva final amb contacte. No cal dir res, només deixar-la visible durant les preguntes.
+Diapositiva final amb contacte. No cal dir res, només deixar-la visible durant les preguntes
 -->
